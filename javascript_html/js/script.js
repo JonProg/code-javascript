@@ -1,1 +1,1 @@
-alert('Fala Players, Tranquilos ?')
+confirm('Fala Players, Tranquilos ?')
