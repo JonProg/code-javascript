@@ -1,0 +1,1 @@
+console.log(planet.slice(5, 10))
