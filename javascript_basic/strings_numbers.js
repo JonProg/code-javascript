@@ -42,9 +42,13 @@ console.log(`${num1.toString() + num2}`) // Faz a representação do num2 em str
 console.log(`${num1.toString(2)}`) // Converte num1 para binário
 console.log(`${num3.toFixed(2)}`) // arredondando número
 console.log(Number.isInteger(num2)) // para saber se o valor é um inteiro
+console.log(Number.isNaN(num3 * 'ola')) // para saber se o valor for invalido
 
+// Math.round(num3) -> arredonda para o mais próximo
+// (num ** 0.5) -> raiz quadrada de um número
+console.log(Math.max(1,2,55,80,63)) // pegar o maior valor em um sequência de valores
+console.log(Math.min(1,2,55,80,63)) // pegar o maior valor em um sequência de valores
 
-
-
+const aleatorio = Math.round(Math.random() * (10-5)+5) // gera valores de 10 a 5 para a const = aleatorio
 
 

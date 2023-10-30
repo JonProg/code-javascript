@@ -1,6 +1,4 @@
 
-//Exercico 01
-
 const nome_user = prompt('Digite seu nome completo:');
 
 document.body.innerHTML += `Seu Nome é: ${nome_user.split(' ')[0]} <br/>`;
@@ -12,12 +10,4 @@ document.body.innerHTML += `As últimas 3 letras do seu nome são: ${nome_user.s
 document.body.innerHTML += `As palavras do seu nome são: [${nome_user.split(' ')}] <br/>`;
 document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome_user.toUpperCase()} <br/>`;
 document.body.innerHTML += `Seu nome com letras menúsculas: ${nome_user.toLowerCase()} <br/>`;
-
-
-//Exercico 02
-
-const num_1 = Number(prompt('Digite um número:'))
-const num_2 = Number(prompt('Digite outro número:'))
-
-alert(`${num_1} + ${num_2} = ${num_1 + num_2}`)
 
