@@ -11,6 +11,9 @@ console.log('Hello',planet); //comentário
    
 console.log(`Welcome ${home}`); // template string
 
+
+// Manipulação de string //
+
 console.log(planet.indexOf('aliens')); // mostra aonde começa a palavra 'aliens' 
 
 console.log(planet.replace('aliens','humam')); // trocando aliens por humam
@@ -26,5 +29,22 @@ console.log(planet.split(' ')) // forma um array com as palavras individuais pel
 console.log(planet.toUpperCase())
 console.log(planet.toLowerCase())
 
+
+// Trabalhando com números //
+
 console.log(typeof(home)); 
+
+let num1 = 5;
+let num3 = 10.58945612;
+let num2 = 6;
+
+console.log(`${num1.toString() + num2}`) // Faz a representação do num2 em string
+console.log(`${num1.toString(2)}`) // Converte num1 para binário
+console.log(`${num3.toFixed(2)}`) // arredondando número
+console.log(Number.isInteger(num2)) // para saber se o valor é um inteiro
+
+
+
+
+
 
