@@ -9,3 +9,10 @@ const game_class = ['Arqueiro','Guerreiro','Mago', 'Assasino','Samurai'];
 // game_class.slice(0,4) -> fatiar a lista pegando mais de um valor igual a string
 // (game_class instanceof Array); -> para saber se a lista é realmente uma lista rsrs
 
+function class_game(id){
+	return console.log(`Você agora é um ${game_class[id]} (=`)
+}
+
+const func = n => n ** 0.5 // função curta
+
+class_game(2);
