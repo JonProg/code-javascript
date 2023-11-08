@@ -10,22 +10,17 @@
     <body>
         <main>
             <section class="container">
-                <h1>CADASTRE-SE</h1>
+                <h1>IMC</h1>
                 <form id="form" class="form">
-                    <label for="username">Nome</label>
-                    <input type="text" name="username" id="username">
+                    <label for="weight">Peso(Kg):</label>
+                    <input type="text" name="weight" id="weight">
 
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password">
+                    <label for="height">Altura(m):</label>
+                    <input type="text" name="height" id="height">
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="number">Número</label>
-                    <input type="number" name="number" id="number">
-
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Calcular</button>
                 </form>
+                <div class="result"></div>
             </section>
         </main>
         <script src="js/script_05.js"></script>

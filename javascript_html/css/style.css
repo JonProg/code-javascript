@@ -126,31 +126,27 @@ h1{
 
 input{
     margin-bottom: 1.5rem;
-    padding-bottom: 0.6rem;
-}
-
-#password,#number{
-    width: 15rem;
+    padding-bottom: 1.4rem;
 }
 
 button{
     text-align: center;
-    border-color: rgb(96, 96, 233);
+    border-color: rgb(85, 85, 233);
     border-radius: 0.3rem;
-    border-width: 0.2rem;
+    border-width: 0.3rem;
     border-style: solid;
     color: rgb(18, 18, 18);
-    font-weight: 400;
-    font-size: medium;
+    font-weight: 500;
+    font-size: 1.5rem;
     padding: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     transition: all 0.6s;
+    cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(96, 96, 233);
+    background-color: rgb(85, 85, 233);
     color: rgb(243, 243, 243);
-    font-weight: 500;
 }
 
 label{
