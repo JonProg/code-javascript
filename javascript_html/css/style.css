@@ -1,9 +1,14 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;800;900&display=swap');
+
 :root{
-    --font-small:'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+    --font:'Inter', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
 
-    --small-weight:400;
+    --large-weight:900;
+    --small-weight:100;
+    --medium-weight:400;
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio, input, select):not(svg *, symbol *)) {
@@ -89,6 +94,10 @@ meter {
 :where(dialog:modal) {
     all: revert;
 }
+html{
+    font-family: var(--font);
+    font-size: 62.5%;
+}
 
 main{
     display: flex;
@@ -102,4 +111,51 @@ main{
 .form{
     display: flex;
     flex-direction: column;
+}
+
+section{
+    width: 30rem;
+}
+
+h1{
+    font-family: var(--font);
+    font-weight: var(--large-weight);
+    font-size: x-large;
+    margin-bottom: 0.9rem;
+}
+
+input{
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+
+#password,#number{
+    width: 15rem;
+}
+
+button{
+    text-align: center;
+    border-color: rgb(96, 96, 233);
+    border-radius: 0.3rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    color: rgb(18, 18, 18);
+    font-weight: 400;
+    font-size: medium;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    transition: all 0.6s;
+}
+
+button:hover{
+    background-color: rgb(96, 96, 233);
+    color: rgb(243, 243, 243);
+    font-weight: 500;
+}
+
+label{
+    font-family: var(--font);
+    font-weight: var(--medium-weight);
+    font-size: medium;
+    padding: 0.6rem 0;
 }
