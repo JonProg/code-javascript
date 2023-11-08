@@ -113,6 +113,30 @@ main{
     flex-direction: column;
 }
 
+.msg-normal{
+    background-color: rgb(126, 236, 123);
+}
+
+.msg-underweight{
+    background-color: rgb(223, 237, 71);
+}
+
+.msg-overweight{
+    background-color: rgb(227, 152, 86);
+}
+
+.msg-obesity{
+    background-color: rgb(225, 97, 83);
+}
+
+.result > p{
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
 section{
     width: 30rem;
 }
