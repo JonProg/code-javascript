@@ -1,6 +1,6 @@
 
 const game_class = ['Arqueiro','Guerreiro','Mago', 'Assasino','Samurai'];
-const [classGame, ...resto] = game_class;
+const [classGame, ...resto] = game_class; // "..." nesse caso esta servindo para pegar os outros valores
 
 // game_class.push('Vagabundo') -> maneira de adicionar algo na lista
 // game_class.unshift('Primeiro') -> adicionar um valor no começo da lista

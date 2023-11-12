@@ -23,3 +23,9 @@ const trainer = {
 
 trainer.play_pokeball(charizard)
 console.log(`${charizard.name} | ${charizard} | ${charizard.level}`)
+
+// Atribuição via desestruturação
+const {name:nameTrainer} = trainer;
+console.log(nameTrainer);
+
+// '...' pega o resto do objeto

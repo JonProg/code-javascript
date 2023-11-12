@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ex003</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-	<body>
+    <body>
+        <main>
+            <section class="container">
+                <h1>IMC</h1>
+                <form id="form" class="form">
+                    <label for="weight">Peso(Kg):</label>
+                    <input type="text" name="weight" id="weight">
 
-		<form class="form" action="" action="GET">
-			<label>Nome:</label>
-			<input type="text" class="nome"><br><br>
+                    <label for="height">Altura(m):</label>
+                    <input type="text" name="height" id="height">
 
-			<label>Sobrenome:</label>
-			<input type="text" class="sobrenome"><br><br>
-
-			<label>Peso:</label>
-			<input type="number" class="peso"><br><br>
-
-			<label>Altura:</label>
-			<input type="text" class="altura"><br><br>
-			<button type="submit">Enviar</button>
-		</form>
-		<div class="result"></div>
-
-		<script src="js/script_04.js"></script>
-
-	</body>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div class="result"></div>
+            </section>
+        </main>
+        <script src="js/script_04.js"></script>
+    </body>
 </html>

@@ -1,5 +1,5 @@
 
-const nome_user = prompt('Digite seu nome completo:');
+const nome_user = prompt('Digite seu nome completo:').toLowerCase();
 
 document.body.innerHTML += `Seu Nome é: ${nome_user.split(' ')[0]} <br/>`;
 document.body.innerHTML += `Seu Nome tem ${nome_user.length} letras <br/>`;
