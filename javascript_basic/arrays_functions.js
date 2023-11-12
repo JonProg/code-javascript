@@ -1,5 +1,6 @@
 
 const game_class = ['Arqueiro','Guerreiro','Mago', 'Assasino','Samurai'];
+const [classGame, ...resto] = game_class;
 
 // game_class.push('Vagabundo') -> maneira de adicionar algo na lista
 // game_class.unshift('Primeiro') -> adicionar um valor no começo da lista
@@ -16,3 +17,6 @@ function class_game(id){
 const func = n => n ** 0.5 // função curta
 
 class_game(2);
+console.log(resto);
+
+
