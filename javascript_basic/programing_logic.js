@@ -26,3 +26,19 @@ for (let index = 0; index < languages.length; index++) {
     console.log(language)
 }
 
+const user = {
+    username:'jonas',
+    password:'senha',
+    email:'email',
+}
+
+/*
+for in do javascript diferentemente do python ele 
+não mostra os valores mais sim os indices caso seja uma lista e caso 
+seja um dicionario ele mostra a key
+*/
+
+for (const key in user) {
+    console.log(key, user[key]);
+}
+
