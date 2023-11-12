@@ -179,3 +179,15 @@ label{
     font-size: medium;
     padding: 0.6rem 0;
 }
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 29, 74);
+    color: aliceblue;
+    font-size: large;
+    border-radius: 0.5rem;
+    width: 50rem;
+    height: 10rem;
+}
