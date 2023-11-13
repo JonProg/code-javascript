@@ -51,11 +51,12 @@ class ValidedForm{
             if (!field.value){
                 this.msgError(field,`"${label}" não pôde estar em branco`)
                 valid = false;
-            }
+            }else{field.parentElement.classList.add('success');}
 
             if(field.id === 'cpf'){
                 if(!this.validedCpf(field)) valid = false;
             }
+
         }
         return valid;
     }
@@ -66,6 +67,7 @@ class ValidedForm{
             this.msgError(field,'"CPF" inválido');
             return false
         }
+        field.parentElement.classList.add('success');
         return true
     }
 
@@ -73,6 +75,10 @@ class ValidedForm{
         const tagMsg = element.parentElement.querySelector('small');
         element.parentElement.classList.add('error');
         tagMsg.innerHTML += `${msg}<br/>`;
+    }
+
+    msgSuccess(element){
+        element.parentElement.classList.add('success');
     }
 
 }
