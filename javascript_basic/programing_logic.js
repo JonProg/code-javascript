@@ -43,8 +43,19 @@ for (const key in user) {
 }
 
 //for of é utilizado quando você precisa do valores de um arry ou string
+
+// while padrão
 let num = 10;
 while (num<=20) {
     console.log(num);
     num += 10;
 }
+
+
+// Primeiro mostra o valor depois faz a condicional
+do{
+    console.log(num);
+    num += 10;
+}while(num<=20);
+
+//Continue e Break são a mesma coisa do python
