@@ -42,3 +42,9 @@ for (const key in user) {
     console.log(key, user[key]);
 }
 
+//for of é utilizado quando você precisa do valores de um arry ou string
+let num = 10;
+while (num<=20) {
+    console.log(num);
+    num += 10;
+}
