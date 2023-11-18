@@ -153,7 +153,7 @@ input{
     padding-bottom: 1.4rem;
 }
 
-button{
+.calculate{
     text-align: center;
     border-color: rgb(85, 85, 233);
     border-radius: 0.3rem;
@@ -168,7 +168,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.calculate:hover{
     background-color: rgb(85, 85, 233);
     color: rgb(243, 243, 243);
 }
