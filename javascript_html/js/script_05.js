@@ -1,8 +1,16 @@
-const dataAtual = new Date();
-const date = document.querySelector('.date');
-const p = document.createElement('p');
+const container = document.querySelector('.container');
+const elements = [
+    {tag:'p', texto:'Frase 1'},
+    {tag:'div', texto:'Frase 2'},
+    {tag:'footer', texto:'Frase 3'},
+    {tag:'section', texto:'Frase 4'},
+];
 
-p.innerHTML = dataAtual.toLocaleString('pt-BR', {dateStyle:'full', timeStyle:'short'})
-date.appendChild(p)
-
-// Forma de fazer uma data em portugues 
+const div = document.createElement('div');
+container.appendChild(div);
+for (let index = 0; index < elements.length; index++) {
+    const {tag, texto} = elements[index];
+    const element = document.createElement(tag);
+    element.innerText = texto;
+    div.appendChild(element);
+}
