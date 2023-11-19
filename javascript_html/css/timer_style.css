@@ -108,21 +108,59 @@ main{
 }
 
 .container{
-
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.0rem;
+    border-radius: 5rem;
+    background-color: rgb(18, 18, 18);
+    width: 40rem;
+    height: 30rem;
 }
 
 .stop{
-
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: rgba(238, 32, 32, 0.896);
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
 }
 
 .pause{
-
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: rgba(238, 104, 32, 0.896);
+    margin: 0 4rem;
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
 }
 
 .play{
-
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: rgba(82, 236, 47, 0.896);
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
 }
 
 .timer{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    width: 33rem;
+    height: 13rem;
+    font-size: 10rem;
+    text-align: center;
+    background-color: rgb(81, 115, 77);
+}
+
+button{
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 10rem;
 }
