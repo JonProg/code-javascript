@@ -115,8 +115,8 @@ main{
     padding: 3.0rem;
     border-radius: 5rem;
     background-color: rgb(18, 18, 18);
-    width: 40rem;
-    height: 30rem;
+    width: 55rem;
+    height: 35rem;
 }
 
 .stop{
@@ -149,7 +149,7 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
-    width: 33rem;
+    width: 47rem;
     height: 13rem;
     font-size: 10rem;
     text-align: center;
