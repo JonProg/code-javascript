@@ -1,37 +1,43 @@
 // flyer photoshop
+function timerStudy(){
+    const clock = document.querySelector('.clock');
+    let seconds = 0;
+    let timer;
 
-const clock = document.querySelector('.clock');
-const play =  document.querySelector('.play');
-const pause = document.querySelector('.pause');
-const stop = document.querySelector('.stop');
-let num = 0;
+    function seeHour(time){
+        const newClock = new Date(time * 1000)
+        return newClock.toLocaleTimeString('pt-BR', {hour12:false, timeZone:'UTC'});
+    }
 
+    function runClock(){
+        timer = setInterval(function(){
+            seconds++;
+            clock.innerHTML = seeHour(seconds);
+        }, 1000);
+    }
 
-function seeHour(num){
-    let newClock = new Date()
-    newClock.setHours(0,0,num)
-    return newClock.toLocaleTimeString('pt-BR', {hour12:false})
+    document.addEventListener('click', function(e){
+        const element = e.target;
+
+        if (element.classList.contains('stop')){
+            clearInterval(timer);
+            clock.innerHTML = '00:00:00';
+            clock.classList.remove('paused');
+            seconds = 0;
+        }
+
+        if (element.classList.contains('pause')){
+            clearInterval(timer);
+            clock.classList.add('paused');
+        }
+
+        if (element.classList.contains('play')){
+            clock.classList.remove('paused');
+            clearInterval(timer);
+            runClock();
+        }
+    });
 }
 
-play.addEventListener('click', function(event){
-    play.disabled = true;
-
-    const timer = setInterval(function(){
-        num++
-        clock.innerHTML = seeHour(num);
-    }, 1000);
-
-    setInterval(pause.addEventListener('click', function(event){
-        clearInterval(timer);
-        play.disabled = false;
-    })
-    )
-    setTimeout(stop.addEventListener('click', function(event){
-            num = 0;
-            clock.innerHTML = seeHour(num);
-            clearInterval(timer);
-            play.disabled = false;
-        })
-    )
-});
+timerStudy();
 

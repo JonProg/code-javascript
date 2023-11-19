@@ -120,27 +120,23 @@ main{
 }
 
 .stop{
-    border-style: solid;
-    border-width: 0.4rem;
-    border-color: rgba(238, 32, 32, 0.896);
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(189, 29, 29);
+    color: rgb(107, 20, 20);
     cursor: pointer;
 }
 
 .pause{
-    border-style: solid;
-    border-width: 0.4rem;
-    border-color: rgba(238, 104, 32, 0.896);
-    margin: 0 4rem;
-    background-color: rgb(237, 237, 237);
+    background-color: rgba(205, 81, 15, 0.896);
+    color: rgb(88, 43, 8);
+    margin: 0 6rem;
     cursor: pointer;
 }
 
+
+
 .play{
-    border-style: solid;
-    border-width: 0.4rem;
-    border-color: rgba(82, 236, 47, 0.896);
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(44, 148, 15);
+    color: rgb(0, 65, 0);
     cursor: pointer;
 }
 
@@ -154,13 +150,24 @@ main{
     font-size: 10rem;
     text-align: center;
     background-color: rgb(81, 115, 77);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 button{
     text-align: center;
-    font-size: small;
+    font-size: medium;
     font-weight: 600;
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(212, 212, 212, 0.15) 0px -36px 30px 0px inset, rgba(212, 212, 212, 0.03) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.paused{
+    color: rgb(198, 44, 44);
+    animation: fadein 1s infinite alternate;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
