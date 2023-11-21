@@ -1,5 +1,6 @@
 const inputTask = document.querySelector('.input-task')
 const btnTask = document.querySelector('.btn-task')
+
 const tasks = document.querySelector('.tasks')
 
 inputTask.addEventListener('keypress', function(e) {
@@ -53,6 +54,10 @@ document.addEventListener('click', function(e) {
     if (element.classList.contains('delete')) {
         element.parentElement.remove();
         saveTasks();
+    }
+
+    if (element.classList.contains('pending')){
+        element.setAttribute('class', 'pending-hover');
     }
 });
 

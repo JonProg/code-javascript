@@ -179,3 +179,34 @@ main{
     padding: 0.7rem;
     background-color: rgba(69, 164, 31, 0.826);
 }
+
+.pending{
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgba(215, 74, 55, 0.803);
+    border-radius: 0.6rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    padding: 0.7rem;
+    background-color: rgba(174, 44, 29, 0.826);
+}
+
+.pending-hover{
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 0.6rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    padding: 0.7rem;
+    background-color: rgba(174, 44, 29, 0.826);
+    border-color: rgb(220, 34, 34);
+    animation: fadein 1s infinite alternate;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
