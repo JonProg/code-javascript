@@ -62,7 +62,7 @@ function saveTasks() {
 
     for (let task of liTasks) {
         let taskText= task.innerText;
-        taskText= tarefaTexto.replace('Concluido', '').trim();
+        taskText= tarefaTexto.replace('Concluido', '').trim(); // colocar o pedente
         arrayTasks.push(tarefaTexto);
     }
 

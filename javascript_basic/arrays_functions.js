@@ -16,7 +16,14 @@ function class_game(id){
 
 const func = n => n ** 0.5 // função curta
 
+const obj = {
+	func() {
+		console.log('Função do objeto')
+	}
+}
+
 class_game(2);
 console.log(resto);
+obj.func();
 
 
