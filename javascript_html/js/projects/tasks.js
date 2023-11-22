@@ -1,7 +1,7 @@
 const inputTask = document.querySelector('.input-task')
 const btnTask = document.querySelector('.btn-task')
-
 const tasks = document.querySelector('.tasks')
+let animated = false;
 
 inputTask.addEventListener('keypress', function(e) {
     if (e.keyCode === 13) {
@@ -20,6 +20,10 @@ function createButtonPending(li) {
     buttonPending.innerText = 'Pendente';
     buttonPending.setAttribute('class', 'pending');
     buttonPending.setAttribute('title', 'Colocar á tarefa em pendente');
+    
+    if (li.classList.contains('isAnimating')){
+        buttonPending.setAttribute('class', 'pending-hover');
+    }
     li.appendChild(buttonPending);
 }
 
@@ -33,10 +37,13 @@ function createButtonDelete(li) {
     li.appendChild(buttonDelete);
 }
 
-function createTask(textoInput) {
+function createTask(textoInput, animated=false) {
     const li = document.createElement('li');
     li.innerText = textoInput;
     tasks.appendChild(li);
+    if (animated){
+        li.setAttribute('class', 'isAnimating');
+    }
     cleanInput();
     createButtonDelete(li);
     createButtonPending(li);
@@ -57,7 +64,9 @@ document.addEventListener('click', function(e) {
     }
 
     if (element.classList.contains('pending')){
+        element.parentElement.setAttribute('class', 'isAnimating');
         element.setAttribute('class', 'pending-hover');
+        saveTasks();
     }
 });
 
@@ -67,8 +76,16 @@ function saveTasks() {
 
     for (let task of liTasks) {
         let taskText= task.innerText;
-        taskText= tarefaTexto.replace('Concluido', '').trim(); // colocar o pedente
-        arrayTasks.push(tarefaTexto);
+        let taskArray = [];
+
+        taskText= taskText.replace('ConcluidoPendente', '').trim();
+        taskArray.push(taskText)
+
+        if (task.classList.contains('isAnimating')){
+            taskArray.push(true);
+        }else{taskArray.push(false);}
+
+        arrayTasks.push(taskArray);
     }
 
     const tasksJSON = JSON.stringify(arrayTasks);
@@ -80,7 +97,7 @@ function addTasksSaves() {
     const listTasks = JSON.parse(tasks);
 
     for(let task of listTasks) {
-        createTask(task);
+        createTask(task[0],task[1]);
     }
 }
 addTasksSaves();

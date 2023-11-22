@@ -160,11 +160,13 @@ main{
 .tasks{
     font-size: 2rem;
     align-self: flex-start;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .tasks>li{
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+    max-width: 100rem;
+    word-wrap: break-word;
 }
 
 .delete{
