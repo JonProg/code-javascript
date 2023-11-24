@@ -12,8 +12,7 @@ function createCalculator() {
       pressBackSpace() {
         this.display.addEventListener('keydown', e => {
           if (e.keyCode === 8) {
-            e.preventDefault();
-            this.clearDisplay();
+            this.display.value = this.display.value.slice(0, -1);
           }
         });
       },
@@ -72,6 +71,6 @@ function createCalculator() {
     };
   }
   
-  const calculator = createCalculator();
-  calculator.start();
+const calculator = createCalculator();
+calculator.start();
   
