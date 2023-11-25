@@ -17,4 +17,6 @@ console.log(maisVelho)
 /* 
     O acumulador é o primeiro do array/objeto caso não seja difinido na função reduce
 object.reduce(func,acumulator) e o valor caso não seja colocado um valor
-padrão no acumulador ele vai ser o segundo valor do array/objeto */
+padrão no acumulador ele vai ser o segundo valor do array/objeto 
+
+*/
