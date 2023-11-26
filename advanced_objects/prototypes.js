@@ -27,3 +27,4 @@ const pessoa2 = new Pessoa('Jonas','Henrique');
 
 // pessoa1 --> Pessoa.prototype --> Object.prototype
 // Ordem de onde o JS visualiza os metodos/atributos
+//Mais performatico
