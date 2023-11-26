@@ -29,3 +29,15 @@ const {name:nameTrainer} = trainer;
 console.log(nameTrainer);
 
 // '...' pega o resto do objeto
+
+const pessoa1 = new Object();
+pessoa1.nome = 'Jonas'
+pessoa1.sobrenome = 'Henrique'
+pessoa1.falarNome = function(){
+    return (`${this.nome} ${this.sobrenome}`)
+}
+
+console.log(pessoa1.nome)
+console.log(pessoa1.sobrenome)
+
+// Object.freeze(ARRAY/OBJETC); para travar o array/objeto para que ele não seja modificado
