@@ -23,3 +23,9 @@ Estudos da linguagem javascript pelo curso do Otávio Miranda - Curso de JavaScr
 
 ### Task Manager
 [![task.png](https://i.postimg.cc/FHfphydT/task.png)](https://postimg.cc/JsLZqBQX)
+
+#
+
+### Calculator
+
+[![calculator.png](https://i.postimg.cc/8cgg660D/calculator.png)](https://postimg.cc/Ppy7GPHF)
