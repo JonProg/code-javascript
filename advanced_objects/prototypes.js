@@ -12,7 +12,6 @@ no prototype do objeto prototype, e assim por diante, até chegar no objeto prot
 final da cadeia.
 */
 
-
 function Pessoa(nome,sobrenome){
     this.nome = nome,
     this.sobrenome = sobrenome
