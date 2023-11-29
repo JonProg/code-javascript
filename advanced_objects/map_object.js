@@ -11,4 +11,8 @@ for (const pessoa of pessoas){
     novasPesssoas.set(id,{...pessoa});
 }
 
+//novasPesssoas.delete(key) para deletar
+//novasPesssoas.get(key) para pegar o valor da key
+//novasPesssoas.set(key) para setar um novo item dentro do map
+
 console.log(novasPesssoas)
