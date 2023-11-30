@@ -10,5 +10,5 @@ class Pessoa{
     }
 }
 
-const p1 = Pessoa('jonas','henrique')
-console.log(p1)
+const p1 = new Pessoa('jonas','henrique');
+console.log(p1);
