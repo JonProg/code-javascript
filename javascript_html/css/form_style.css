@@ -14,28 +14,28 @@ body {
     align-items: center;
 }
 
-.container {
+.container{
+    margin: 60px 0;
     background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
+    width: 450px;
     max-width: 100%;
     overflow: hidden;
 }
 
 .header {
-    padding: 15px;
+    font-size: x-large;
+    padding-top: 15px;
     padding-left: 20px;
 }
 
-.form {
+.form{
     padding: 20px;
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
+    padding-bottom: 10px;
 }
 
 .form-control label {
@@ -60,7 +60,7 @@ body {
 }
 
 .form-control small {
-    position: absolute;
+    margin-bottom: 120px;
     visibility: hidden;
 }
 
@@ -72,6 +72,7 @@ body {
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 10px;
 }
 
 /* Error and Success */
