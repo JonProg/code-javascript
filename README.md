@@ -10,7 +10,6 @@ Estudos da linguagem javascript pelo curso do Otávio Miranda - Curso de JavaScr
 #
 ## Projects <img src="to_readme\emoji_rocket.png" width="22" height="22" align="center"></img>
 
-#
 ### IMC
 [![imc-1.png](https://i.postimg.cc/4ytNQFmY/imc-1.png)](https://postimg.cc/5Q4Vxg5J)
 
